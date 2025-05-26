@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: novelty-predict-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: novelty-predict
+  template:
+    metadata:
+      labels:
+        app: novelty-predict
+    spec:
+      containers:
+        - name: novelty-predict-container
+          image: shelflife.azurecr.io/novelty-predict-api:v1
+          ports:
+            - containerPort: 80

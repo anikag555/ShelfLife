@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-staples-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-staples
+  template:
+    metadata:
+      labels:
+        app: user-staples
+    spec:
+      containers:
+      - name: user-staples
+        image: <your-acr-name>.azurecr.io/user-staples-api:v1
+        ports:
+        - containerPort: 80
