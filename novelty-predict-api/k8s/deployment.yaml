@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: novelty-predict-container
-          image: shelflife.azurecr.io/novelty-predict-api:v1
+          image: shelflife.azurecr.io/novelty-predict-api:v110
           ports:
             - containerPort: 80

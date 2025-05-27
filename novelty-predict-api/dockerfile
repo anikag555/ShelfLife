@@ -5,4 +5,5 @@ COPY . /app
 
 RUN pip install --no-cache-dir fastapi uvicorn pandas scikit-learn joblib
 
+COPY novelty_model.pkl ./
 CMD ["uvicorn", "novelty_predict_api:app", "--host", "0.0.0.0", "--port", "80"]

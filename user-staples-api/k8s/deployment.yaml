@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: user-staples
-        image: <your-acr-name>.azurecr.io/user-staples-api:v1
+        image: shelflife.azurecr.io/user-staples-api:v99
         ports:
         - containerPort: 80
