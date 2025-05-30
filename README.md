@@ -2,7 +2,7 @@
 
 ### Dataset Source
 **Name:** Instacart Market Basket Analysis  
-**Link:** [Kaggle Dataset](https://www.kaggle.com/datasets/instacart/instacart-market-basket-analysis)  
+**Link:** [Kaggle Dataset](https://www.kaggle.com/datasets/hunter0007/ecommerce-dataset-for-predictive-marketing-2023)  
 **Overview:** Contains over 3 million grocery orders across 200,000+ users. Includes order timestamps, product info, and reordering behavior.  
 **Relevance:** Enables prediction of when users deviate from staple buying habits based on timing.
 
