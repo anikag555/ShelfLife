@@ -19,4 +19,4 @@
 - Extracted day-of-week and hour-of-day features.
 
 **Load:**
-- Saved transformed tables as Delta tables in Databricks for model training and visualization.
+- Saved transformed tables in Databricks for model training and visualization.
