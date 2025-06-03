@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Github Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife Project Overview</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>ShelfLife: Predictive Novelty Purchase Timing</h1>
+    </header>
 
-  <script src="script.js"></script>
+    <main>
+        <section id="introduction">
+            <h2>Introduction & Background</h2>
+            <p>This project explores predictive analytics to identify when users are most likely to make novel purchases—items outside their regular staples. Our goal is to enhance retail strategies by predicting high-value shopping moments.</p>
+        </section>
+
+        <section id="problem">
+            <h2>Problem & Motivation</h2>
+            <p>Retailers often optimize for average behavior but miss potential profits from novelty behavior. We aim to forecast when deviations from standard purchase patterns are most likely to occur, using time-based features and user staples.</p>
+        </section>
+
+        <section id="team">
+            <h2>Team Structure</h2>
+            <p>The team is composed of two members: one focused on data engineering and pipeline orchestration, the other on ML model development and dashboard visualization.</p>
+        </section>
+
+        <section id="tech-stack">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li>Docker: For containerization</li>
+                <li>Databricks: For scalable ETL and ML training</li>
+                <li>Spark ML & scikit-learn: For model training</li>
+                <li>MLflow: Model tracking and deployment</li>
+                <li>AKS: API orchestration and deployment</li>
+            </ul>
+        </section>
+
+        <section id="microservices">
+            <h2>Microservices & Architecture</h2>
+            <p>We deployed two microservices: a User Staples API and a Novelty Predict API. These communicate via internal endpoints within AKS. Below is a simplified architecture diagram:</p>
+            <img src="architecture-diagram.png" alt="Architecture Diagram">
+        </section>
+
+        <section id="dataset">
+            <h2>Dataset & ETL</h2>
+            <p>Data was sourced from Kaggle's Instacart Online Grocery Shopping Dataset. We cleaned and split the data in Databricks, using Delta Tables for storage and Spark transformations for ETL.</p>
+        </section>
+
+        <section id="ml-model">
+            <h2>ML Model</h2>
+            <p>We used a RandomForestClassifier to predict novelty purchase timing based on hour and weekday. MLflow was used to track performance, with an AUC of 0.78 and F1-score of 0.72.</p>
+        </section>
+
+        <section id="api">
+            <h2>REST APIs & Security</h2>
+            <ul>
+                <li><code>GET /user-staples</code>: Returns staple items</li>
+                <li><code>POST /predict-novelty-time</code>: Returns novelty probability</li>
+            </ul>
+            <p>Security includes basic JWT validation, error logging, and retry logic using Python’s requests library.</p>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard & Monitoring</h2>
+            <p>Our Streamlit dashboard visualizes novelty probabilities, time trends, and system health. Alerts are triggered on latency spikes and low-confidence predictions.</p>
+            <img src="dashboard-screenshot.png" alt="Dashboard Screenshot">
+        </section>
+
+        <section id="genai">
+            <h2>GenAI Tool Reflection</h2>
+            <p>OpenAI tools helped with debugging FastAPI, YAML scripting for AKS, and refining model insights. They improved efficiency but required careful verification for production use.</p>
+        </section>
+
+        <section id="frontend">
+            <h2>Unified UI</h2>
+            <p>Our UI provides a seamless user flow from login to prediction insights. Below are screenshots of key steps:</p>
+            <img src="ui-screenshot1.png" alt="UI Screenshot 1">
+            <img src="ui-screenshot2.png" alt="UI Screenshot 2">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShelfLife Project Team</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
