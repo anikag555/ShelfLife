@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/eshasingh/Documents/ShelfLife/novelty-predict-api/mlruns/0/c50026c44c7d4b13a3bb06a403ab5652/artifacts
+end_time: 1748533908471
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c50026c44c7d4b13a3bb06a403ab5652
+run_name: rare-sow-543
+run_uuid: c50026c44c7d4b13a3bb06a403ab5652
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748533903928
+status: 3
+tags: []
+user_id: eshasingh

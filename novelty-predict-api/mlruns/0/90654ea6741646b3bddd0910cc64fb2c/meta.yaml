@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/eshasingh/Documents/ShelfLife/novelty-predict-api/mlruns/0/90654ea6741646b3bddd0910cc64fb2c/artifacts
+end_time: 1748533882397
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 90654ea6741646b3bddd0910cc64fb2c
+run_name: dazzling-owl-794
+run_uuid: 90654ea6741646b3bddd0910cc64fb2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748533877957
+status: 3
+tags: []
+user_id: eshasingh
