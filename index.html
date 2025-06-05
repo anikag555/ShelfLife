@@ -14,64 +14,55 @@
     <main>
         <section id="introduction">
             <h2>Introduction & Background</h2>
-            <p>This project explores predictive analytics to identify when users are most likely to make novel purchases—items outside their regular staples. Our goal is to enhance retail strategies by predicting high-value shopping moments.</p>
-        </section>
-
-        <section id="problem">
-            <h2>Problem & Motivation</h2>
-            <p>Retailers often optimize for average behavior but miss potential profits from novelty behavior. We aim to forecast when deviations from standard purchase patterns are most likely to occur, using time-based features and user staples.</p>
-        </section>
-
-        <section id="team">
-            <h2>Team Structure</h2>
-            <p>The team is composed of two members: one focused on data engineering and pipeline orchestration, the other on ML model development and dashboard visualization.</p>
+            <p>Our project predicts when users are most likely to purchase items outside their regular staples, using time-based features like hour and weekday. This helps retailers identify high-profit moments driven by novelty behavior. We use user-level purchase history to define staple items and train a classification model to detect deviations. One team member handled the data pipeline, microservice deployment, and infrastructure setup. The other focused on model development, evaluation, and dashboard creation.</p>
         </section>
 
         <section id="tech-stack">
             <h2>Technology Stack</h2>
-            <ul>
-                <li>Docker: For containerization</li>
-                <li>Databricks: For scalable ETL and ML training</li>
-                <li>Spark ML & scikit-learn: For model training</li>
-                <li>MLflow: Model tracking and deployment</li>
-                <li>AKS: API orchestration and deployment</li>
-            </ul>
+            <p>We used Docker for containerization, Databricks for scalable data processing and model training, Spark ML for feature engineering, and AKS for microservice deployment. MLflow was used for model tracking and deployment. These tools were chosen for their compatibility with large datasets, ease of integration, and support for end-to-end machine learning workflows.</p>
         </section>
 
         <section id="microservices">
             <h2>Microservices & Architecture</h2>
-            <p>We deployed two microservices: a User Staples API and a Novelty Predict API. These communicate via internal endpoints within AKS. Below is a simplified architecture diagram:</p>
+            <p>We built two microservices: the User Staples API and the Novelty Predict API. The User Staples API identifies staple items for each user based on purchase frequency. The Novelty Predict API uses these staples along with time-based features to predict the likelihood of a novelty item purchase. Both services are containerized with Docker and deployed on AKS. Below is a simplified architecture diagram:</p>
             <img src="archDiagram.png" alt="Architecture Diagram">
         </section>
 
         <section id="dataset">
             <h2>Dataset & ETL</h2>
-            <p>Data was sourced from Kaggle's Instacart Online Grocery Shopping Dataset. We cleaned and split the data in Databricks, using Delta Tables for storage and Spark transformations for ETL.</p>
+            <p>We used the <a href="https://www.kaggle.com/datasets/hunter0007/ecommerce-dataset-for-predictive-marketing-2023" target="_blank">Ecommerce Dataset for Predictive Marketing 2023</a> from Kaggle. This dataset contains user-level purchase history suitable for modeling staple and novelty behavior.</p>
+            <p>We processed the data in Databricks using PySpark. The ETL pipeline extracted each user’s staple items and labeled novelty purchases. Cleaned data was stored in Delta Tables for efficient access during model training and API integration.</p>
         </section>
 
         <section id="ml-model">
             <h2>ML Model</h2>
-            <p>We used a RandomForestClassifier to predict novelty purchase timing based on hour and weekday. MLflow was used to track performance, with an AUC of 0.78 and F1-score of 0.72.</p>
+            <p>We used a Random Forest Classifier to predict whether a given order contains a novelty item based on the hour and weekday. This model was chosen for its ability to handle nonlinear feature interactions and imbalanced classes with minimal preprocessing. It was trained in Databricks using labeled data that identified staple and non-staple purchases per user.</p>
+            <p>The model achieved an Accuracy reading of 0.66, AUC of 0.62, and an F1-score of 0.77. It was logged and versioned using MLflow, then deployed as a REST API with FastAPI and Docker. The API was containerized and deployed to AKS for scalability and integration with other services.</p>
         </section>
 
         <section id="api">
             <h2>REST APIs & Security</h2>
+                <p>We built two microservices: the User Staples API and the Novelty Predict API. The User Staples API identifies staple items for each user based on purchase frequency. The Novelty Predict API uses these staples along with time-based features to predict the likelihood of a novelty item purchase. Both services are containerized with Docker and deployed on AKS. The architecture includes internal communication between the two services. The main endpoints are:</p>
             <ul>
                 <li><code>GET /user-staples</code> : Returns staple items</li>
-                <li><code>POST /predict-novelty-time</code> : Returns novelty probability</li>
+                <li><code>POST /predict-novelty-time</code> : Returns the probability of a novelty purchase given user ID, hour, and day of week</li>
             </ul>
             <p>Security includes basic JWT validation, error logging, and retry logic using Python’s requests library.</p>
         </section>
 
         <section id="dashboard">
             <h2>Dashboard & Monitoring</h2>
-            <p>Our Streamlit dashboard visualizes novelty probabilities, time trends, and system health. Alerts are triggered on latency spikes and low-confidence predictions.</p>
+            <p>Our real-time dashboard, built with Streamlit and connected to Databricks, visualizes key metrics such as novelty purchase probabilities, distribution of staple vs. non-staple items, and prediction trends by hour and weekday. Screenshots of the dashboard are shown below.</p>
+            <p>The dashboard highlights low-confidence predictions, system latency, and API response rates. Alerts are triggered when latency exceeds a set threshold or when prediction confidence drops below 60%, allowing for faster debugging and model performance monitoring.</p>
+
             <img src="dashboard-screenshot.png" alt="Dashboard Screenshot">
         </section>
 
         <section id="genai">
             <h2>GenAI Tool Reflection</h2>
-            <p>OpenAI tools helped with debugging FastAPI, YAML scripting for AKS, and refining model insights. They improved efficiency but required careful verification for production use.</p>
+            <p>We used ChatGPT to assist with code creation and understanding new concepts related to APIs, machine learning, and deployment. It was especially useful for quickly generating boilerplate code, explaining unfamiliar tools, and refining our architecture.</p>
+            <p>We also used Databricks’ built-in AI assistant to debug code directly within notebooks. This helped resolve Spark errors and streamline the ETL process. While both tools accelerated development, we still verified all outputs manually to ensure reliability in production.</p>
+
         </section>
 
         <section id="frontend">
