@@ -37,7 +37,7 @@
         <section id="ml-model">
             <h2>ML Model</h2>
             <p>We used a Random Forest Classifier to predict whether a given order contains a novelty item based on the hour and weekday. This model was chosen for its ability to handle nonlinear feature interactions and imbalanced classes with minimal preprocessing. It was trained in Databricks using labeled data that identified staple and non-staple purchases per user.</p>
-            <p>The model achieved an Accuracy reading of 0.66, AUC of 0.62, and an F1-score of 0.77. It was logged and versioned using MLflow, then deployed as a REST API with FastAPI and Docker. The API was containerized and deployed to AKS for scalability and integration with other services.</p>
+            <p>The model achieved an Accuracy reading of 0.67, AUC of 0.71, and an F1-score of 0.77. It was logged and versioned using MLflow, then deployed as a REST API with FastAPI and Docker. The API was containerized and deployed to AKS for scalability and integration with other services.</p>
         </section>
 
         <section id="api">
