@@ -4,3 +4,9 @@ joblib
 pandas
 scikit-learn
 mlflow
+flask
+requests
+tenacity
+dotenv
+PyJWT
+Flask-Limiter

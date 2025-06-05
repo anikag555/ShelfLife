@@ -1,0 +1,106 @@
+[2025-06-05 02:01:06,096] INFO in auth-api: Logging initialized
+[2025-06-05 02:01:06,167] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:01:06,167] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:01:06,167] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:01:06,263] INFO in auth-api: Logging initialized
+[2025-06-05 02:01:06,300] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:01:06,308] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:03:43,426] INFO in auth-api: Logging initialized
+[2025-06-05 02:03:43,631] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:03:43,631] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:03:43,632] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:03:43,739] INFO in auth-api: Logging initialized
+[2025-06-05 02:03:43,773] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:03:43,778] INFO in _internal:  * Debugger PIN: 749-602-921
+[2025-06-05 02:13:54,123] INFO in auth-api: Logging initialized
+[2025-06-05 02:13:54,185] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:13:54,185] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:13:54,186] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:13:54,296] INFO in auth-api: Logging initialized
+[2025-06-05 02:13:54,326] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:13:54,332] INFO in _internal:  * Debugger PIN: 749-602-921
+[2025-06-05 02:14:37,965] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:14:37,989] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:14:38,143] INFO in auth-api: Logging initialized
+[2025-06-05 02:14:38,193] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:14:38,199] INFO in _internal:  * Debugger PIN: 749-602-921
+[2025-06-05 02:14:39,385] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:14:39,407] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:14:39,536] INFO in auth-api: Logging initialized
+[2025-06-05 02:14:39,576] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:14:39,580] INFO in _internal:  * Debugger PIN: 749-602-921
+[2025-06-05 02:16:04,891] INFO in auth-api: Logging initialized
+[2025-06-05 02:16:04,961] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:16:04,961] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:16:04,962] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:16:05,060] INFO in auth-api: Logging initialized
+[2025-06-05 02:16:05,096] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:16:05,101] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:18:28,401] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:18:28,462] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:18:28,695] INFO in auth-api: Logging initialized
+[2025-06-05 02:18:28,760] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:18:28,769] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:23:07,149] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:23:07,202] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:23:07,348] INFO in auth-api: Logging initialized
+[2025-06-05 02:23:07,402] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:23:07,406] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:23:10,429] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:23:10,457] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:23:10,592] INFO in auth-api: Logging initialized
+[2025-06-05 02:23:10,629] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:23:10,634] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:23:11,646] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:23:11,687] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:23:11,790] INFO in auth-api: Logging initialized
+[2025-06-05 02:23:11,824] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:23:11,829] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:23:26,001] INFO in auth-api: Logging initialized
+[2025-06-05 02:23:26,043] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:23:26,043] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:23:26,043] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:23:26,130] INFO in auth-api: Logging initialized
+[2025-06-05 02:23:26,162] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:23:26,168] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:25:12,121] INFO in _internal:  * Detected change in '/Users/anikagari/Documents/GitHub/ShelfLife/novelty-predict-api/auth-api.py', reloading
+[2025-06-05 02:25:12,162] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:25:12,292] INFO in auth-api: Logging initialized
+[2025-06-05 02:25:12,340] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:25:12,346] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:25:26,630] INFO in auth-api: Logging initialized
+[2025-06-05 02:25:26,668] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:25:26,668] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:25:26,669] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:25:26,756] INFO in auth-api: Logging initialized
+[2025-06-05 02:25:26,796] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:25:26,801] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:26:00,442] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:26:00] "GET /rate-limited-api HTTP/1.1" 200 -
+[2025-06-05 02:26:24,886] INFO in auth-api: Logging initialized
+[2025-06-05 02:26:24,940] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-05 02:26:24,940] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-05 02:26:24,940] INFO in _internal:  * Restarting with stat
+[2025-06-05 02:26:25,026] INFO in auth-api: Logging initialized
+[2025-06-05 02:26:25,055] WARNING in _internal:  * Debugger is active!
+[2025-06-05 02:26:25,060] INFO in _internal:  * Debugger PIN: 169-543-159
+[2025-06-05 02:28:27,553] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:28:27] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+[2025-06-05 02:29:35,183] INFO in auth-api: Login success for user: admin
+[2025-06-05 02:29:35,183] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:29:35] "POST /login HTTP/1.1" 200 -
+[2025-06-05 02:31:20,131] INFO in auth-api: Secure API accessed
+[2025-06-05 02:31:20,133] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:31:20] "GET /secure-api HTTP/1.1" 200 -
+[2025-06-05 02:31:27,899] INFO in auth-api: Secure API accessed
+[2025-06-05 02:31:27,900] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:31:27] "GET /secure-api HTTP/1.1" 200 -
+[2025-06-05 02:31:30,973] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:31:30] "[31m[1mGET /secure-api HTTP/1.1[0m" 401 -
+[2025-06-05 02:31:34,826] INFO in auth-api: Secure API accessed
+[2025-06-05 02:31:34,827] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:31:34] "GET /secure-api HTTP/1.1" 200 -
+[2025-06-05 02:48:19,220] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:48:19] "GET / HTTP/1.1" 200 -
+[2025-06-05 02:48:19,270] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:48:19] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+[2025-06-05 02:48:19,271] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:48:19] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+[2025-06-05 02:48:19,271] INFO in _internal: 127.0.0.1 - - [05/Jun/2025 02:48:19] "GET / HTTP/1.1" 200 -
