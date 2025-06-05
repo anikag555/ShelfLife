@@ -24,9 +24,13 @@ model.fit(X_train, y_train)
 # Save locally
 joblib.dump(model, "novelty_model.pkl")
 
-# Log with MLflow
 with mlflow.start_run():
-    mlflow.sklearn.log_model(model, "novelty-model")
+    mlflow.sklearn.log_model(
+        sk_model=model,
+        artifact_path="novelty-model",
+        input_example=X_test.head(1),  
+        registered_model_name="novelty-model"
+    )
     acc = accuracy_score(y_test, model.predict(X_test))
     mlflow.log_metric("accuracy", acc)
-    print("✅ Logged to MLflow with accuracy:", acc)
+

@@ -17,3 +17,4 @@ spec:
           image: shelflife.azurecr.io/novelty-predict-api:v110
           ports:
             - containerPort: 80
+
